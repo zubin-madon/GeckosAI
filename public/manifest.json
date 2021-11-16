@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "GeckosAI",
+  "name": "A derivative art series using neural networks and AI.",
   "icons": [
     {
       "src": "favicon.ico",
