@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Quantico:ital@0;1&display=swap');
+/* body {
+    font-family: 'Quantico', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    font-size: 24px;
+    padding: 70px;
+    background-color: #0d0d0d;
+} */
+
+/* .short-description {
+  font-family: 'Quantico', sans-serif;
+  font-style: italic;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    font-size: 22px;
+    padding: 70px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Libre Barcode 128 Text', cursive !important;
+  /* font-size: 100px; */
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  /* color: #ffffff; */
+  -webkit-font-smoothing: antialiased;
+  /* background: -webkit-linear-gradient(#eee, rgb(82, 81, 81)); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: 'Special Elite', cursive;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) { background-image: url("Gecko46.jpg"); }
+
+.accordion ul li:nth-child(2) { background-image: url("Gecko567.jpg"); }
+
+.accordion ul li:nth-child(3) { background-image: url("Gecko600.jpg"); }
+
+.accordion ul li:nth-child(4) { background-image: url("Geckos24.jpg"); }
+
+.accordion ul li:nth-child(5) { background-image: url("Geckos170.jpg"); }
+
+.accordion ul li:nth-child(6) { background-image: url("Geckos311.jpg"); }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 60%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+
+  .accordion { height: auto; }
+
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  }
+
+.frosted-container {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11px );
+  -webkit-backdrop-filter: blur( 11px );
+  border-radius: 10px;
+  border: 5px solid rgba(63, 81, 181, 0.4);
+  border-style: ridge;
+
+}
+.frosted-container::before {
+  content: "";
+      background-image: url('pink_space.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+}
+.mint-button {
+  transition-duration: 0.4s;
+  background-color:#3f51b5 !important;
+  color: white !important;
+}
+
+.mint-button:hover {
+  background-color: white !important;
+  color: #3f51b5 !important;
+  border: 3px solid #3f51b5 !important;
+  border-style: double !important;
+}
+
+/* MUI Elements */
+*:not(.custom) > span.MuiButton-label {
+  color: #ffffff;
+}
+
+.title {
+  -webkit-font-smoothing: antialiased;
+  background: -webkit-linear-gradient(#eee, rgb(82, 81, 81));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.connect {
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+
+.connect:hover {
+  color: white !important;
+  background: black !important;
+  border: 2px solid white !important;
+}
