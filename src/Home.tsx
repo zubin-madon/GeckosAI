@@ -335,7 +335,7 @@ const Home = (props: HomeProps) => {
             className="bg-black border-white rounded-none flex font-semibold border-2 mt-12 text-white py-3 px-10 top-5 absolute items-center hover:(text-black bg-white border-black) "
             onClick={() => setModalOpen(false)}
           >
-            MINT
+            COMING SOON
           </button>
 
           <div
