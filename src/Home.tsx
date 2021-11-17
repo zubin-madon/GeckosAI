@@ -262,7 +262,7 @@ const Home = (props: HomeProps) => {
                 <b>Balance:</b> {(balance || 0).toLocaleString()} SOL
               </p>
               <p className="font-bold mt-3 text-white text-lg text-center">
-                {itemsRedeemed} / {itemsRemaining}
+                {itemsRedeemed} / 444
                 <br />
                 Geckos Minted
               </p>
