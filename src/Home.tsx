@@ -175,11 +175,19 @@ const Home = (props: HomeProps) => {
 
   const contentModal = useRef<HTMLDivElement>(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [alreadyConnected, setAlreadyConnected] = useState(false);
 
   const loreEl = useRef<HTMLDivElement>(null);
   const roadmapEl = useRef<HTMLDivElement>(null);
   const marketsEl = useRef<HTMLDivElement>(null);
   const contactEl = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    if (!alreadyConnected && wallet) {
+      setModalOpen(true);
+      setAlreadyConnected(true);
+    }
+  }, [wallet]);
 
   return (
     <div
