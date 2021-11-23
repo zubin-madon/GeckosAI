@@ -491,7 +491,15 @@ const Home = (props: HomeProps) => {
           <span
             className="text-white text-xl text-justify z-20 relative"
           >
-            To be announced!
+            <a
+              href="https://digitaleyes.market/collections/GeckosAI"
+              target="_blank"
+              rel="noreferrer"
+              title="Secondary Market Digital Eyes"
+              className="border-white border-dotted border-b-1 hover:(text-black bg-white) "
+            >
+            - Digital Eyes
+            </a>
           </span>
         </div>
       </div>
