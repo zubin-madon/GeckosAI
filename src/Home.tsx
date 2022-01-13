@@ -499,6 +499,15 @@ const Home = (props: HomeProps) => {
               className="border-white border-dotted border-b-1 hover:(text-black bg-white) "
             >
             - Digital Eyes
+            </a><br></br>
+            <a
+              href="https://www.magiceden.io/marketplace/geckosai"
+              target="_blank"
+              rel="noreferrer"
+              title="Secondary Market Magic Eden"
+              className="border-white border-dotted border-b-1 hover:(text-black bg-white) "
+            >
+            - Magic Eden
             </a>
           </span>
         </div>
